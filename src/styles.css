@@ -62,10 +62,11 @@ body {
 .filter-container {
   position: relative;
   top: -2.5em;
-  background-color: white;
+  background-color: #ffffff;
   border-radius: 10px;
   padding: 1em 0;
   width: 100%;
+  height: auto;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -74,7 +75,7 @@ body {
 
 .btn-container {
   display: inline-block;
-  margin: 1em 1em;
+  margin: 1em 0.5em;
 }
 
 .filter-span {
@@ -116,15 +117,12 @@ body {
 .company {
   display: flex;
   align-items: center;
+  flex-direction: row;
   /* padding: 2em 0.5em; */
 }
 
 .about-company {
   margin-left: 1em;
-}
-
-.about-company p {
-  color: #2c3a3a;
 }
 
 .company-logo img {
@@ -137,6 +135,7 @@ body {
 }
 
 .position {
+  color: #2c3a3a;
   margin: 1em 0;
   font-weight: 700;
   font-size: 1.2rem;
@@ -193,7 +192,6 @@ body {
 }
 
 /* Requirements */
-
 .btn-req {
   background-color: rgb(240, 250, 251);
   font-weight: 700;
@@ -202,8 +200,8 @@ body {
   border: #eef6f6;
   border-radius: 5px;
   cursor: pointer;
-  padding: 0.8em 0.8em;
-  margin-right: 1em;
+  padding: 0.8em;
+  margin-right: 0.5em;
 }
 
 .btn-req:hover,
@@ -249,9 +247,13 @@ body {
   }
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 420px) {
   .position {
     font-size: 0.9rem;
+  }
+
+  .btn-container {
+    margin: 0.8em 0.4em;
   }
 
   .filter-span,
@@ -266,12 +268,7 @@ body {
     font-size: 0.4rem;
   }
 
-  .btn-container {
-    margin: 0.5em 0.4em;
-  }
-
   .btn-req {
     font-size: 0.7rem;
-    margin-right: 0.2em;
   }
 }
